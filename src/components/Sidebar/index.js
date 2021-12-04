@@ -9,17 +9,17 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='about' onClick={toggle}>
-                        About
+                    <SidebarLink to='cojemate' onClick={toggle}>
+                        Čo je mate
                     </SidebarLink>
-                    <SidebarLink to='discover' onClick={toggle}>
-                        Discover
+                    <SidebarLink to='zcohojemate' onClick={toggle}>
+                        Z čoho je mate
                     </SidebarLink>
-                    <SidebarLink to='services' onClick={toggle}>
-                        Services
+                    <SidebarLink to='priprava' onClick={toggle}>
+                        Príprava
                     </SidebarLink>
-                    <SidebarLink to='signup' onClick={toggle}>
-                        Sign Up
+                    <SidebarLink to='inesposoby' onClick={toggle}>
+                        Iné spôsoby
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
