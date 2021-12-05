@@ -18,7 +18,7 @@ const HeroSection = () => {
                     <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
                 </HeroBg>
                 <HeroContent>
-                    <HeroH1>Yerba Mate</HeroH1>
+                    {/* <HeroH1>Yerba Mate</HeroH1> */}
                     {/* <HeroBtnWrapper>
                         <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true' dark='true'>

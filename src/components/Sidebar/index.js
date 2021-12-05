@@ -9,16 +9,40 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='cojemate' onClick={toggle}>
+                    <SidebarLink to='cojemate' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
                         Čo je mate
                     </SidebarLink>
-                    <SidebarLink to='zcohojemate' onClick={toggle}>
+                    <SidebarLink to='zcohojemate' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
                         Z čoho je mate
                     </SidebarLink>
-                    <SidebarLink to='priprava' onClick={toggle}>
+                    <SidebarLink to='priprava' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
                         Príprava
                     </SidebarLink>
-                    <SidebarLink to='inesposoby' onClick={toggle}>
+                    <SidebarLink to='inesposoby' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
                         Iné spôsoby
                     </SidebarLink>
                 </SidebarMenu>
