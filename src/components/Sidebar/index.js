@@ -47,8 +47,8 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/signin'>
-                        Sign In
+                    <SidebarRoute to='/vyhody'>
+                        Výhody
                     </SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
