@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 400px;
     position:relative;
     z-index: 1;
 
@@ -18,7 +18,11 @@ export const HeroContainer = styled.div`
         left:0;
         bottom:0;
         right:0;
-        background: (linear-gradient180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%, linear-gradient(180deg, rgba(0,0,0,0.2) 0%), transparent 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%, linear-gradient(180deg, rgba(0,0,0,0.2) 0%), transparent 100%);
+    }
+
+    @media screen and (max-width: 810px){
+        height: 300px;
     }
 `;
 
@@ -52,11 +56,11 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 28px;
+    color: #000;
+    font-size: 36px;
     text-align: center;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 810px){
         font-size: 40px;
     }
 
@@ -72,7 +76,7 @@ export const HeroP = styled.p`
     text-align: center;
     max-width: 600px;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 810px){
         font-size: 24px;
     }
 
