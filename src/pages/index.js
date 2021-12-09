@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
 import { coJeMate, ineSposoby, pripravaPitie, zcohoJeMate } from '../components/InfoSection/Data'
+import Vyhody from '../components/Vyhody'
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             <InfoSection {...zcohoJeMate}/>
             <InfoSection {...pripravaPitie}/>
             <InfoSection {...ineSposoby}/>
+            <Vyhody />
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
@@ -71,9 +71,6 @@ const Navbar = ({toggle}) => {
                             >Iné spôsoby</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to='/vyhody'>Výhody</NavBtnLink>
-                    </NavBtn>
                 </NavbarContainer>
             </Nav>
             </IconContext.Provider>
