@@ -83,3 +83,17 @@ export const Img =styled.img`
     margin: 0 0 10px 0;
     padding-right:0;
 `;
+
+export const Tabulka = styled.ul`
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: ${({darkText})=> (darkText ? '#010606' : '#f7f8fa')};
+    list-style-type: circle;
+`
+
+export const ListElement = styled.li`
+    margin: 10px;
+`

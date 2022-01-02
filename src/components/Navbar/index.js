@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, NavBtn, NavBtnLink } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
@@ -70,10 +70,16 @@ const Navbar = ({toggle}) => {
                             offset={-80}
                             >Iné spôsoby</NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to='vyhody'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            >Výhody</NavLinks>
+                        </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to='/vyhody'>Výhody</NavBtnLink>
-                    </NavBtn>
                 </NavbarContainer>
             </Nav>
             </IconContext.Provider>

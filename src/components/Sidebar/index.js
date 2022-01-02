@@ -1,5 +1,5 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SideBtnWrap, SidebarLink, SidebarRoute, SidebarWrapper, SidebarMenu } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarLink, SidebarWrapper, SidebarMenu } from './SidebarElements'
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -45,12 +45,16 @@ const Sidebar = ({isOpen, toggle}) => {
                     onClick={toggle}>
                         Iné spôsoby
                     </SidebarLink>
-                </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to='/vyhody'>
+                    <SidebarLink to='vyhody' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
                         Výhody
-                    </SidebarRoute>
-                </SideBtnWrap>
+                    </SidebarLink>
+                </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
     )
