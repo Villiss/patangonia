@@ -45,6 +45,15 @@ const Sidebar = ({isOpen, toggle}) => {
                     onClick={toggle}>
                         Iné spôsoby
                     </SidebarLink>
+                    <SidebarLink to='vyhody' 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    onClick={toggle}>
+                        Výhody
+                    </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

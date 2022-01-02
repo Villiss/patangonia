@@ -23,13 +23,16 @@ function Store({ match }) {
 
 export default function Vyhody() {
   return (
-    <div className="container">
+    <div className="vyhody" id="vyhody">
       <h1 className="nadpis">Aké sú výhody yerba mate?</h1>
-      <AnimateSharedLayout type="crossfade">
-        <Router>
-          <Route path={["/:id", "/"]} component={Store} />
-        </Router>
-      </AnimateSharedLayout>
+      <div className="container">
+        
+        <AnimateSharedLayout type="crossfade">
+          <Router>
+            <Route path={["/:id", "/"]} component={Store} />
+          </Router>
+        </AnimateSharedLayout>
+      </div>
     </div>
   );
 }

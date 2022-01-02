@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
 import { coJeMate, ineSposoby, pripravaPitie, zcohoJeMate } from '../components/InfoSection/Data'
 import Vyhody from '../components/Vyhody'
+import IneSposoby from '../components/IneSposoby'
 
 const Home = () => {
 
@@ -22,7 +23,7 @@ const Home = () => {
             <InfoSection {...coJeMate}/>
             <InfoSection {...zcohoJeMate}/>
             <InfoSection {...pripravaPitie}/>
-            <InfoSection {...ineSposoby}/>
+            <IneSposoby/>
             <Vyhody />
         </>
     )

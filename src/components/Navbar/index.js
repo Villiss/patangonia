@@ -70,6 +70,15 @@ const Navbar = ({toggle}) => {
                             offset={-80}
                             >Iné spôsoby</NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to='vyhody'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            >Výhody</NavLinks>
+                        </NavItem>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

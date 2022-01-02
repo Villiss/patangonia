@@ -1,10 +1,19 @@
 .container {
   flex: 1 100%;
   padding: 45px 25px;
+  background-color: #01bf71;
   text-align: center;
+  overflow-x: scroll;
 }
+
+.vyhody {
+  height: 100vh;
+}
+
 .nadpis {
   color: #1c1c1e;
+  text-align: center;
+  padding: 45px 25px;
 }
 
 h1 {
@@ -31,6 +40,7 @@ li {
   height: 460px;
   flex: 0 0 40%;
   max-width: 40%;
+  margin: 5px;
 }
 
 .card-content-container {
@@ -42,7 +52,7 @@ li {
 }
 
 .card-content-container.open {
-  top: 0;
+  top: 100px;
   left: 0;
   right: 0;
   position: fixed;
@@ -63,11 +73,10 @@ li {
 }
 
 .open .card-content {
-  height: auto;
-  max-width: 700px;
-  overflow: hidden;
+  height: 80%;
+  max-width: 80%;
+  overflow-y: scroll;
   scrollbar-width: none;
-  pointer-events: none;
 }
 
 .card-open-link {
@@ -83,8 +92,9 @@ li {
   top: 0;
   left: 0;
   overflow: hidden;
-  height: 420px;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .open .card-image-container,
@@ -95,13 +105,12 @@ li {
 .title-container {
   position: absolute;
   top: 15px;
-  left: 15px;
-  max-width: 300px;
+  width: 100%;
+  padding: 20px;
 }
 
 .open .title-container {
   top: 30px;
-  left: 30px;
 }
 
 h2 {
@@ -132,9 +141,8 @@ h2 {
 }
 
 .content-container {
-  padding: 460px 35px 35px 35px;
-  max-width: 700px;
-  width: 90vw;
+  padding: 150px 20px;
+  width: 100%;
 }
 
 p {
@@ -157,6 +165,13 @@ p {
     padding: 10px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .open .card-content {
+    height: 60%;
+    max-width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 
   .card-content-container.open {
